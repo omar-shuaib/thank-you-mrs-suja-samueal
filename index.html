@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You, Mrs Suja!</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: 'Arial', sans-serif;
+            background: #f3f4f6;
+            color: #333;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        /* Messages Section */
+        .messages {
+            margin: 30px auto;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .messages h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #444;
+        }
+
+        .btn {
+            display: block;
+            width: 80%;
+            margin: 10px auto;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 8px;
+            background: linear-gradient(135deg, #85FFBD, #FFFB7D);
+            color: #333;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Display Area for Messages */
+        #messageDisplay {
+            margin-top: 30px;
+            font-size: 1.2rem;
+            color: #555;
+            padding: 20px;
+            background: #ffffff;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            min-height: 50px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 30px;
+            padding: 15px 10px;
+            background-color: #333;
+            color: white;
+            font-size: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Thank You, Mrs Suja Samuel!</h1>
+        <p>Your dedication has inspired us beyond words. Here's a special thank-you from all of us!</p>
+    </section>
+
+    <!-- Message Display Area -->
+    <div id="messageDisplay">
+        Click on a name to see their special message!
+    </div>
+
+    <!-- Messages Section -->
+    <section class="messages">
+        <h2>Messages from the Class</h2>
+        <button class="btn" onclick="showMessage('Rayyan', 'I want to take a moment to thank you for everything you’ve taught me. Your way of explaining concepts has made learning computers so much easier and more enjoyable for me. I’m truly grateful for all the guidance and support you’ve given me this year.<br><br>Thank you so much for being such an amazing teacher!')">Rayyan</button>
+        <button class="btn" onclick="showMessage('Sam', 'Monkie')">Sam</button>
+        <button class="btn" onclick="showMessage('Isaac', 'Thank you ma\'am for everything you\'ve taught us not just in computers but also in so many other things like that day you told us how to choose our future career path. These small talks really changed my perspective on so many different problems.<br><br>Thank you especially for all the encouragement during CLADS and CLMUN time. I\'ll cherish these classes and experiences forever.<br><br>Thank you so MUCH ma\'am.')">Isaac</button>
+        <button class="btn" onclick="showMessage('Melvin', 'My life just got hacked')">Melvin</button>
+        <button class="btn" onclick="showMessage('Zoya', 'Thank you so much for being such an amazing teacher. The lessons I learnt in this class will always stick with me. It was truly an honour to be a part of this computer science batch.')">Zoya</button>
+        <button class="btn" onclick="showMessage('Nithya', 'Thank you so much for everything you have taught me, ma\'am. As my teacher from 8th grade, I will forever never forget the lessons you taught me. I will never forget you for as long as I live. Thank you very much.')">Nithya</button>
+        <button class="btn" onclick="showMessage('Roshan', 'Thank you for all the guidance and all the fun we had in class. I\'m sorry for all the trouble we caused. Truly, ma\'am, I have never learnt computers the way you have taught it, in such a unique way that I just absorb it.<br><br>Thank you so much for teaching us and guiding us. God bless you ma\'am.')">Roshan</button>
+        <button class="btn" onclick="showMessage('Omar', 'Thank you ma’am for everything you have taught us and for helping us debug our programs as well as our lives.')">Omar</button>
+        <button class="btn" onclick="showMessage('Yohan', 'Thank you ma’am for all that you’ve done for us ma’am, going beyond the requirements of just a mere teacher, thank you for always taking in our inputs and making us feel like valuable members of this school! Thank you also for inculcating in us discipline, which will carry us through in our future years. Thank you for imparting your excellence in the subject ma’am.<br><br>Ring leader,<br>Yohan :)')">Yohan</button>
+        <button class="btn" onclick="showMessage('Pranav', 'Respected Mrs Suja,<br><br>It\'s a blessing that I\'ve studied in Clarence and even more Blessed to have you as my Computer Science teacher. I know I have finished all portions before coming to your class and I will be sitting and either writing short notes, or flipping through the pages of the textbook or relaxing. But I have listened to the instructions you have given to answer certain questions like K map, Assertion Reason, 5 mark code, etc.<br><br>In addition to Computer Science, you have taught me other things that will stay in my mind throughout my life. You have given many suggestions and tips for my college studies and my job. I don\'t know if I can follow them (I\'m still confused about my future), but I\'ll try my best. These two years\' memories are incomplete without you. I\'ll be in touch over the years. I keep praying all day for the school, the students, and teachers.<br><br>Thank you for being our computer teacher and school vice principal. I\'m bereft of words.<br><br>Once again, thank you ma\'am. Love you a lot ❤️🫶🙏🥹')">Pranav</button>
+        <button class="btn" onclick="showMessage('Cyrus', 'Thank you ma\'am for making me fall in love with a subject I used to hate, for always encouraging and supporting me. I will forever be grateful. Thank you 😁')">Cyrus</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        Made with ❤️ by Batch of 2025
+    </footer>
+
+    <script>
+        function showMessage(name, message) {
+            const displayDiv = document.getElementById('messageDisplay');
+            displayDiv.innerHTML = `<strong>${name} says:</strong><br>${message}`;
+        }
+    </script>
+</body>
+</html>
